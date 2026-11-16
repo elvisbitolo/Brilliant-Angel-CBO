@@ -1,0 +1,412 @@
+/* Stats */
+.statsSection {
+  padding: 60px 24px;
+  background: var(--bg);
+  margin-top: -60px;
+  position: relative;
+  z-index: 3;
+}
+
+/* About */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sectionLabel {
+  display: inline-block;
+  background: rgba(11, 110, 79, 0.08);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.aboutText h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.aboutText p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.aboutText .btn {
+  margin-top: 8px;
+}
+
+/* Mission Vision */
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.mvCard {
+  background: var(--white);
+  padding: 40px 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.mvCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.mvIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.mvCard h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.mvCard p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+}
+
+/* Programs */
+.programGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.programCard {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 28px;
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.programCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.programIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.programCard h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.programCard p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--gray-500);
+  flex: 1;
+}
+
+.programLink {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Sulwe */
+.sulweSection {
+  padding: 100px 24px;
+  background: linear-gradient(135deg, #fef9f0 0%, #f6fbf6 100%);
+}
+
+.sulweGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sulweBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--secondary), #f57f17);
+  color: var(--white);
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+  .sulweContent h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.sulweContent p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+/* Testimonials */
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonialCard {
+  background: var(--bg);
+  padding: 36px 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+}
+
+.quote {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.author strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+
+.author span {
+  font-size: 0.82rem;
+  color: var(--gray-400);
+}
+
+/* CTA */
+.ctaSection {
+  padding: 80px 24px;
+  background: var(--bg);
+}
+
+.ctaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.ctaVolunteer,
+.ctaDonate {
+  padding: 48px 36px;
+  border-radius: var(--radius-lg);
+  color: var(--white);
+}
+
+.ctaVolunteer {
+  background: var(--primary);
+}
+
+.ctaDonate {
+  background: linear-gradient(135deg, var(--secondary), #f57f17);
+}
+
+.ctaVolunteer h2,
+.ctaDonate h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.ctaVolunteer p,
+.ctaDonate p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+/* Adopt a Child */
+.adoptSection {
+  padding: 100px 24px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+}
+
+.adoptGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.adoptBadge {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.adoptContent h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.adoptContent p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.adoptVisual {
+  display: flex;
+  justify-content: center;
+}
+
+.adoptCard {
+  background: var(--white);
+  padding: 40px 32px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  border: 2px solid rgba(11, 110, 79, 0.15);
+}
+
+.adoptRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.childIcon {
+  font-size: 2.5rem;
+}
+
+.adoptArrow {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.freeTag {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.adoptResult p {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+/* FAQ */
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  padding: 28px 24px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-100);
+}
+
+.faqItem h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.faqItem p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--gray-500);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .aboutGrid,
+  .sulweGrid,
+  .adoptGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .mvGrid,
+  .programGrid,
+  .testimonialGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .mvGrid,
+  .programGrid,
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutText h2,
+.sulweContent h2 {
+    font-size: 1.7rem;
+  }
+}

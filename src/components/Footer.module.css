@@ -1,0 +1,121 @@
+.footer {
+  background: var(--dark);
+  color: var(--gray-300);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 64px 24px 40px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.motto {
+  font-style: italic;
+  color: var(--secondary);
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+}
+
+.desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: var(--gray-400);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.socials a:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.col h4 {
+  color: var(--white);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.col li {
+  margin-bottom: 10px;
+}
+
+.col a {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.col a:hover {
+  color: var(--secondary);
+}
+
+.contactList li {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.contactList a {
+  color: var(--gray-400);
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 20px 24px;
+}
+
+.bottom p {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 48px 24px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

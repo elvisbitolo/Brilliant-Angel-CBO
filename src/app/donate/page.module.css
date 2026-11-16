@@ -1,0 +1,194 @@
+.hero {
+  background: linear-gradient(135deg, #e5933a, #f57f17);
+  color: var(--white);
+  padding: 100px 24px 70px;
+}
+
+.hero .label {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.donateInfo h2,
+.donateMethods h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.donateInfo > p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+  margin-bottom: 28px;
+}
+
+.impactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.impactItem {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-100);
+}
+
+.impactItem span {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.impactItem strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.impactItem p {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* Methods */
+.methodCard {
+  padding: 28px 24px;
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  margin-bottom: 16px;
+}
+
+.methodIcon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.methodCard h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.methodCard p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+}
+
+.steps {
+  padding-left: 20px;
+  margin: 12px 0;
+}
+
+.steps li {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  margin-bottom: 4px;
+}
+
+.steps li strong {
+  color: var(--dark);
+}
+
+.methodNote {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 0.88rem;
+  color: var(--gray-500);
+}
+
+.methodNote strong {
+  color: var(--primary);
+}
+
+.bankDetails {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bankRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.bankLabel {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.bankValue {
+  font-size: 0.88rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.note {
+  padding: 16px 20px;
+  background: #fff8e1;
+  border-radius: var(--radius-md);
+  border: 1px solid #ffe082;
+  font-size: 0.88rem;
+  color: #795548;
+  line-height: 1.6;
+}
+
+.note strong {
+  color: #e65100;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
